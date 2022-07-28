@@ -18,20 +18,19 @@ in between work to knock it out.
 
 # Please explain your approach and process for each solution
 
-I will break this part in to three parts: 
+I will break this part into three parts: 
 
 The design phase, the Index phase, and the Article phase:
 
 ### Design phase:
 
-I originally had a design in mind for this, but knew it was going to be a rough first draft as I had to get back to 
-using a vanilla stack whilst browsing the SASS docs. Once I started tinkering with layout designs things came 
+ Once I started tinkering with layout designs things came 
 together as I started to remember syntax rules and methods, etc. This in 
 particular is apparent through out my SCSS styling.
 
 I scrapped the early implementation because I simply didn't feel it was good enough to show to a hypothetical 
 customer. I don't strive for below average experiences, even if those experiences are not quite perfect. If someone 
-sees my design, I want it to be, at the least, appeasing to the eyes and hassle-free.
+sees my design, I want it to be, at the least, appeasing to the eyes and hassle-free. There is something to be said about balance in quality and performance.
 
 Once I started on the second and final layout, things came together much quickly. The final 2 hours was, truthfully, 
 the bulk of the project. I was gaining a lot of speed once I started remembering the syntax rules (I fought through 
@@ -52,7 +51,7 @@ management up a bit. I try to keep things clean, but workarounds often have expe
 With that, I was pretty happy overall with how the carousel of blog articles came out.
 
 Originally, I was going to implement inifnite scrolling using IntersectionObserver, and having a div that it sees, 
-then fires the next page, and that works great for sites like Reddit, Twitter, etc., but ultimately - again - it was 
+then fires the next page, and that works great for sites like Reddit, Twitter, etc., but ultimately it was 
 something that would have taken up a chunk of time I feel would have been unneccessary, so therefore opted for a 
 simpler solution: slicing an Array with all the pre-defined things from the assessment: 6 items shown at once, 24 in 
 total. This meant that I had 4 pages to show, and could swap these pages and just take the chunk of the Array I 
@@ -63,18 +62,15 @@ needed to show the next 6. Add some buttons, boom. Quick and easy.
 This was a pretty simple phase, I actually fought with the hero banner quite a bit and that was really been due to how 
 rusty I was on the styling side of things. Like most things it will come back to me if I spend any time living in it.
 
-Things went well here, I think I struggled the most with coming up with content on my own to fill the large empty 
-space, but it overall meets the minimum requirements, and it doesn't look too shabby.
+Things went well here, overall I don't feel it looks too shabby. Functions well.
 
-Here I had to make a fetch request which grabbed a random image, and I did some fudging with the Articles `const` 
-file I 
-had created to randomly grab a title and description.
+Here I had to make a fetch request which grabbed a random image, and I did some fudging with the Articles `const` file I had created to randomly grab a title and description.
 
 
 # Which of your talents, skills, or languages best helped you during the test?
 
 Definitely the amount of time I've spent living in JavaScript and TypeScript. TypeScript's typing system has spoiled 
-me a little bit, and truth be told I don't like to be randomly sabotaged by my code (JavaScript), but understanding 
+me a little bit, and truth be told I don't like to be randomly sabotaged by my code, but understanding 
 JS and state, and understanding React's fundamentals helped a ton. 
 
 # What talents, skills, or languages would have been helpful?
@@ -89,12 +85,12 @@ I would definitely add infinite scrolling (where it would just loop around), thi
 maintainability if we ever wanted to add to the articles.
 
 I would also definitely spend more time on the overall look and feel of the UI, I think it is the beginnings of 
-something very cool looking but, alas, I just don't have the time.
+something very cool looking but, alas, I didn't see that I had enough time
 
 Additionally, I would overhaul the state and how it's being managed (probably with something like Redux instead of 
 using `useReducer()`, making use of slices).
 
-The CSS/SCSS would absolutely get a makeover, it is at times somewhat sloppy and I would like to improve on that.
+The CSS/SCSS would absolutely get a makeover, it is at times somewhat sloppy and I am going to improve on that.
 
 Finally, the images don't randomly fetch on the Index page for the articles. I noticed that as I was nearing 
 completion, and that is a quick fix I could implement, using the same technique I used in the `Article` component.
