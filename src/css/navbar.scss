@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Rampart+One&display=swap');
+
+.navbar-parent {
+  display: flex;
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 105%;
+  height: 35px;
+  background-color: #fff7f2;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  list-style-type: none;
+
+  li, li > a {
+    font-family: 'Rampart One', cursive;
+
+  }
+
+  .article-link:hover {
+    color: #656565;
+    cursor: pointer;
+  }
+
+}
