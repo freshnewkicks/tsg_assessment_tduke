@@ -95,3 +95,6 @@ Additionally, I would overhaul the state and how it's being managed (probably wi
 using `useReducer()`, making use of slices).
 
 The CSS/SCSS would absolutely get a makeover, it is at times somewhat sloppy and I would like to improve on that.
+
+Finally, the images don't randomly fetch on the Index page for the articles. I noticed that as I was nearing 
+completion, and that is a quick fix I could implement, using the same technique I used in the `Article` component.
